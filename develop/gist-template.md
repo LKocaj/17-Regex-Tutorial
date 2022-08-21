@@ -1,4 +1,4 @@
-# Title (replace with your title)
+# 17. Computer Science for JavaScript Challenge: Regex Tutorial
 
 REGEX or Regular Expressions can be used to find certain patterns of characters within a string, a sequence of characters that defines a specific search pattern. Regex can be used to find certain patterns of characters within a string. They are also used frequently to validate input data.
 
