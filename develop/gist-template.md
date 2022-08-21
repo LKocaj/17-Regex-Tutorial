@@ -1,10 +1,10 @@
 # Title (replace with your title)
 
-Introductory paragraph (replace this with your text)
+REGEX or Regular Expressions can be used to find certain patterns of characters within a string, a sequence of characters that defines a specific search pattern. Regex can be used to find certain patterns of characters within a string. They are also used frequently to validate input data.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+We'll use the expression used for matching hex values (the color code format system). Theres a standard format and a shorter version with only 3 characters describing the colors versus 6. 
 
 /^#?([a-f0-9]{6}|[a-f0-9]{3})$/
 
@@ -38,25 +38,47 @@ Used to communicated how many characters are to be expected. Quantifiers set lim
 ## OR Operator -
 /^#?([a-f0-9]{6}`|`[a-f0-9]{3})$/
 
+The OR operator within a given expression is defined using the `|` element. The OR operator indicates that it could either of the elements that we are separating with the line. HEX value can be either 3 or 6 in this sample.
+
 ## Character Classes -
 /^#?(`[a-f0-9]`{6}|`[a-f0-9]{3}`)$/
 
+Character classes can define a set of characters that can occur in input strings to fulfill a match. For aexample, a-f searches for letters a - f and 0 -9 searches for the numbers 0 - 9.
+
 ## Flags -
 
+Regular expressions may have flags that affect the search.
+
 ## Grouping and Capturing -
+
+Captures everything that is closed between the parenthesis. It isolates only  a part of the full match and assigns it an ID so it can be referred to later in the regex.
 
 ## Bracket Expressions -
 /^#?`([a-f0-9]{6}|[a-f0-9]{3})`$/
 
+We use parenthesis to define our bracket expression. This bracket expression shows the beginning of a character class or quantifier. 
+
 ## Greedy and Lazy Match -
 /^#`?`([a-f0-9]{6}|[a-f0-9]{3})$/
 
+The difference is that a greedy match will try to match an element as many times as possible. A lazy match will do the opposite and try to match as few times as possible to an element. Our example has a ? which would be lazy.
+
 ## Boundaries -
+
+A boundary is a position between \w and \W (non-word char), or at the beginning or end of a string if it begins or ends with a word character. \b allows you to perform a “whole words only”. A “word character” is a character that can be used to form words. All characters that are not “word characters” are “non-word characters”.
 
 ## Back-references -
 
+Back references are used to match a same text previously matched by a capturing group. This both helps in reusing previous parts of your pattern and in ensuring two pieces of a string will match.
+
 ## Look-ahead and Look-behind -
+
+Look-ahead and Look-behind (together called look around) are assertions like start of a word or end of a line. Sometimes we need to find only those matches for a pattern that are followed or preceded by another pattern.
 
 # Author -
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Lawrence Kocaj
+
+Web Developer in Westchester, New York taking the UCONN coding bootcamp.
+
+Project Link: https://github.com/LKocaj/17-regex-tutorial
