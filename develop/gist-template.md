@@ -6,7 +6,7 @@ Introductory paragraph (replace this with your text)
 
 Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
 
-/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+/^#?([a-f0-9]{6}|[a-f0-9]{3})$/
 
 ## Table of Contents
 
@@ -26,25 +26,31 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ## Anchors
 
-Anchors is a term refering to the beginning ``` ^ ``` or end ``` $ ``` of an expression, shown below.
-
-
 /`^`([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})`$`/
 
 
+Anchors is a term refering to the beginning ``` ^ ``` or end ``` $ ``` of an expression, shown above.
+
 ## Quantifiers
+/^#`?`([a-f0-9]`{6}`|[a-f0-9]`{3}`)$/
+<br>
+Used to communicated how many characters are to be expected. Quantifiers set limits of a string that your regex matches. They will specify how many times a character, a group, or class must be present in the input for a match to be found. 
 
 ## OR Operator
+/^#?([a-f0-9]{6}`|`[a-f0-9]{3})$/
 
 ## Character Classes
+/^#?(`[a-f0-9]`{6}|`[a-f0-9]{3}`)$/
 
 ## Flags
 
 ## Grouping and Capturing
 
 ## Bracket Expressions
+/^#?`([a-f0-9]{6}|[a-f0-9]{3})`$/
 
 ## Greedy and Lazy Match
+/^#`?`([a-f0-9]{6}|[a-f0-9]{3})$/
 
 ## Boundaries
 
