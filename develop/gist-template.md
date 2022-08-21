@@ -6,6 +6,8 @@ Introductory paragraph (replace this with your text)
 
 Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
 
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
 ## Table of Contents
 
 - [Anchors](#anchors)
@@ -20,30 +22,36 @@ Briefly summarize the regex you will be describing and what you will explain. In
 - [Back-references](#back-references)
 - [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
-## Regex Components
+# Regex Components
 
-### Anchors
+## Anchors
 
-### Quantifiers
+Anchors is a term refering to the beginning ``` ^ ``` or end ``` $ ``` of an expression, shown below.
 
-### OR Operator
 
-### Character Classes
+/`^`([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})`$`/
 
-### Flags
 
-### Grouping and Capturing
+## Quantifiers
 
-### Bracket Expressions
+## OR Operator
 
-### Greedy and Lazy Match
+## Character Classes
 
-### Boundaries
+## Flags
 
-### Back-references
+## Grouping and Capturing
 
-### Look-ahead and Look-behind
+## Bracket Expressions
 
-## Author
+## Greedy and Lazy Match
+
+## Boundaries
+
+## Back-references
+
+## Look-ahead and Look-behind
+
+# Author
 
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
