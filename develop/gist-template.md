@@ -24,40 +24,39 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 # Regex Components
 
-## Anchors
+## Anchors -
+### /`^`([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})`$`/
+<br>
 
-/`^`([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})`$`/
+Anchors is a term refering to the beginning ` ^ ` or end ` $ ` of an expression, shown above.
 
-
-Anchors is a term refering to the beginning ``` ^ ``` or end ``` $ ``` of an expression, shown above.
-
-## Quantifiers
+## Quantifiers -
 /^#`?`([a-f0-9]`{6}`|[a-f0-9]`{3}`)$/
 <br>
 Used to communicated how many characters are to be expected. Quantifiers set limits of a string that your regex matches. They will specify how many times a character, a group, or class must be present in the input for a match to be found. 
 
-## OR Operator
+## OR Operator -
 /^#?([a-f0-9]{6}`|`[a-f0-9]{3})$/
 
-## Character Classes
+## Character Classes -
 /^#?(`[a-f0-9]`{6}|`[a-f0-9]{3}`)$/
 
-## Flags
+## Flags -
 
-## Grouping and Capturing
+## Grouping and Capturing -
 
-## Bracket Expressions
+## Bracket Expressions -
 /^#?`([a-f0-9]{6}|[a-f0-9]{3})`$/
 
-## Greedy and Lazy Match
+## Greedy and Lazy Match -
 /^#`?`([a-f0-9]{6}|[a-f0-9]{3})$/
 
-## Boundaries
+## Boundaries -
 
-## Back-references
+## Back-references -
 
-## Look-ahead and Look-behind
+## Look-ahead and Look-behind -
 
-# Author
+# Author -
 
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
